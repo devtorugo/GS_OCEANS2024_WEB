@@ -10,7 +10,7 @@ const Header = () => {
                     <li>Sobre nós</li>
                     <li>Contato</li>
                     <li>Login</li>
-                    <li><button className='btn'>Cadastrar</button></li>
+                    <li><button className='btn'>Cadastrar-se</button></li>
                 </ul>
             </nav>
         
