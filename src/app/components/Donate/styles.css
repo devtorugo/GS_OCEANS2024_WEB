@@ -1,13 +1,13 @@
 .doacao-container {
     background-image: url('/oceano2.jpg');
-    background-size: cover; /* Ajuste a imagem para cobrir todo o container */
+    background-size: cover; 
     padding: 40px;
     display: flex;
     align-items: center;
   }
   
   .doacao-image {
-    width: 600px; /* Ajuste o tamanho da imagem conforme necessário */
+    width: 600px; 
     margin-right: 40px;
   }
   

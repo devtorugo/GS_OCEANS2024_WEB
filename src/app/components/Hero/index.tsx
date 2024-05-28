@@ -1,14 +1,14 @@
 import React from 'react';
 import './styles.css'; 
+import Link from 'next/link';
 
 const Hero = () => {
     return (
           <div className='hero cntainer'>
            <div className='texto-hero'>
                 <h1>Animais marinhos ameaçados de extinção</h1>
-                <p>Temos como objetivo ajudar Ongs a encontrar animais marinhos que estão em risco
-                     de extinção e ajudar a localizalos para poder evitar essa causa</p>
-                     <button className='btn'>Saiba mais</button>
+                <p>Nosso objetivo é ajudar ONGs a localizar e proteger animais marinhos em risco de extinção, contribuindo para a conservação dos oceanos e ecossistemas marinhos.</p>
+                     <Link href={'/animals'}><button className='btn'>Saiba mais</button></Link>
            </div>
           </div>
     );

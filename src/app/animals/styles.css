@@ -1,0 +1,69 @@
+/* styles.css */
+
+.animals-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    .animals-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/oceano2.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    
+  }
+  
+  .animal-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .animal-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .animal-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .animal-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .animal-description {
+    flex: 1;
+    padding: 0 20px;
+    text-align: left;
+    color: black;
+  }
+  
+  .animal-name {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .animal-info {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  
+  .animal-description:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    margin: 20px 0;
+  }
+  
