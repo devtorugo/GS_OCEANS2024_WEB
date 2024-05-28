@@ -24,6 +24,10 @@ const DonationPage = () => {
     
                         <label>CPF</label>
                         <input type='text' name="cpf" placeholder='Digite seu CPF' />
+
+                        <label>CEP</label>
+                        <input type='text' name="cep" placeholder='Digite seu CEP' />
+    
     
                         <label>Valor da Doação (R$)</label>
                         <input type='number' name="amount" placeholder='Digite o valor da doação' />

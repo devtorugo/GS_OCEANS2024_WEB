@@ -1,53 +1,57 @@
-.login {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
+.login-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     background-image: url('/oceano2.jpg');
     background-size: cover;
     background-position: center;
 }
- 
-.login-col {
-    color: #ffffff;
-}
- 
-.login h3 {
-    color: #ffffff;
-    font-weight: 500;
-    font-size: 25px;
-    margin-bottom: 20px;
-    margin-top: 2px;
-}
- 
-.login form {
+
+.login-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 400px;
+    width: 100%;
 }
- 
-.login form label {
+
+.login-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
     display: block;
     margin-bottom: 5px;
+    color: #555;
 }
- 
-.login form input {
+
+.form-group input {
     width: 100%;
     padding: 10px;
-    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
- 
-.login form button {
+
+.btn {
     width: 100%;
     padding: 10px;
-   
-    color: #fff;
     border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
- 
-.login form button:hover {
-    background-color: #1a1a1a;
+
+.btn:hover {
+    background-color: #2d8905;
 }

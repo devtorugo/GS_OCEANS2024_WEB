@@ -8,6 +8,7 @@
     align-items: center;
     background: url('/oceano2.jpg');
     background-size: cover;
+    margin-top: 60px;
 }
 
 .donation-container {
