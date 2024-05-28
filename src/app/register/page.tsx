@@ -12,6 +12,9 @@ const Register = () => {
  
                     <label>Sobrenome</label>
                     <input type='text' name="lastName" placeholder='Digite seu sobrenome' />
+
+                    <label>Email</label>
+                    <input type='text' name="email" placeholder='Digite seu email' />
  
                     <label>Causa Social</label>
                     <input type='text' name="socialCause" placeholder='Digite sua causa social' />
