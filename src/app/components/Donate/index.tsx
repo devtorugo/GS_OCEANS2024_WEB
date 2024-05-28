@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles.css';
+import Link from 'next/link';
 
 const Doacao = () => {
   return (
@@ -10,7 +11,7 @@ const Doacao = () => {
         <p className="doacao-text">
           Os oceanos são fundamentais para a vida na Terra. Eles regulam o clima, fornecem oxigênio, alimentação e são fonte de lazer e inspiração. Ajude as ONGs que trabalham incansavelmente para proteger nossos oceanos e a vida marinha.
         </p>
-        <button className="doacao-button">Fazer uma doação</button>
+        <Link href={'/donation'}><button className="doacao-button">Fazer uma doação</button></Link>
       </div>
     </div>
   );
