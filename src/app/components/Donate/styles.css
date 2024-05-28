@@ -1,0 +1,44 @@
+.doacao-container {
+    background-image: url('/oceano2.jpg');
+    background-size: cover; /* Ajuste a imagem para cobrir todo o container */
+    padding: 40px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .doacao-image {
+    width: 600px; /* Ajuste o tamanho da imagem conforme necessário */
+    margin-right: 40px;
+  }
+  
+  .doacao-content {
+    flex: 1;
+    color: rgb(255, 255, 255);
+  }
+  
+  .doacao-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .doacao-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .doacao-button {
+    background-color: #fff;
+    color: #4caf50;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .doacao-button:hover {
+    background-color: #f0f0f0;
+  }
+  
