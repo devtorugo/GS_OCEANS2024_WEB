@@ -11,7 +11,7 @@ const Header = () => {
                     <li>Sobre nós</li>
                     <Link href={'/contact'}><li>Contato</li></Link>
                     <li>Login</li>
-                    <li><button className='btn'>Cadastrar-se</button></li>
+                    <Link href={'/register'}><li><button className='btn'>Cadastrar-se</button></li></Link>
                 </ul>
             </nav>
         
