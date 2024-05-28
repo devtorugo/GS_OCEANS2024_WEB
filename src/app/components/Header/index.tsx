@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles.css'; 
+import Link from 'next/link';
 
 const Header = () => {
     return (
@@ -8,7 +9,7 @@ const Header = () => {
                 <ul>
                     <li>Conservação</li>
                     <li>Sobre nós</li>
-                    <li>Contato</li>
+                    <Link href={'/contact'}><li>Contato</li></Link>
                     <li>Login</li>
                     <li><button className='btn'>Cadastrar-se</button></li>
                 </ul>
