@@ -1,0 +1,24 @@
+
+.footer {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    color: #ffffff;
+    justify-content: space-around;
+    background: url('/oceano2.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .participant {
+    text-align: center;
+  }
+  
+  .participant h3 {
+    margin-bottom: 5px;
+  }
+  
+  .participant p {
+    margin: 0;
+  }
+  
