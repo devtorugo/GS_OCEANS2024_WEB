@@ -13,63 +13,48 @@
 
 .donation-container {
     display: flex;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 20px;
 }
 
-.donation-description {
+.donation-col {
     flex: 1;
     padding: 20px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.donation-description h3 {
+.donation-col h3 {
     color: #333;
     font-weight: 500;
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-.donation-description p {
+.donation-col p {
     color: #555;
     margin-bottom: 15px;
 }
 
-.donation-description ul {
+.donation-col ul {
     margin-bottom: 15px;
     padding-left: 20px;
 }
 
-.donation-description li {
+.donation-col li {
     list-style-type: disc;
     color: #555;
     margin-bottom: 5px;
 }
 
-.donation-form {
-    flex: 1;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.donation-form h3 {
-    color: #333;
-    font-weight: 500;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.donation-form label {
+.donation-col form label {
     display: block;
     margin-bottom: 5px;
 }
 
-.donation-form input,
-.donation-form textarea {
+.donation-col form input,
+.donation-col form textarea {
     width: calc(100% - 22px);
     padding: 10px;
     margin-bottom: 15px;
@@ -77,11 +62,11 @@
     border-radius: 4px;
 }
 
-.donation-form textarea {
+.donation-col form textarea {
     height: 100px;
 }
 
-.donation-form button {
+.donation-col form button {
     width: 100%;
     padding: 10px;
     border: none;
@@ -93,6 +78,14 @@
     transition: background-color 0.3s ease;
 }
 
-.donation-form button:hover {
+.donation-col form button:hover {
     background-color: #2d8905;
+}
+
+.error,
+.success {
+    margin-top: 10px;
+    color: #dc3545;
+    font-size: 14px;
+    font-weight: 500;
 }
