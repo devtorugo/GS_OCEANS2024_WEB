@@ -1,7 +1,43 @@
-import React from 'react';
-import './styles.css'; 
+'use client'
+import React, { useState } from 'react';
+import './styles.css';
 
 const Contact = () => {
+    const [nome, setNome] = useState("");
+    const [telefone, setTelefone] = useState("");
+    const [mensagem, setMensagem] = useState("");
+    const [erro, setErro] = useState("");
+    const [mensagemSucesso, setMensagemSucesso] = useState("");
+
+    const handleSubmit = async (event: any) => {
+        event.preventDefault();
+
+        if (!nome || !telefone || !mensagem) {
+            setErro("Por favor, preencha todos os campos.");
+            return;
+        }
+
+        try {
+            const response = await fetch("http://localhost:8080/contatos", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ nome, telefone, mensagem }),
+            });
+            if (!response.ok) {
+                throw new Error("Erro ao enviar mensagem.");
+            }
+            setMensagemSucesso("Mensagem enviada com sucesso!");
+            setNome(""); 
+            setTelefone(""); 
+            setMensagem(""); 
+        } catch (error) {
+            console.error(error);
+            setErro("Erro ao enviar mensagem. Por favor, tente novamente.");
+        }
+    };
+
     return (
         <div className='contact'>
             <div className='contact-col'>
@@ -20,17 +56,37 @@ const Contact = () => {
                 </ul>
             </div>
             <div className='contact-col'>
-                <form>
+                <form onSubmit={handleSubmit} method="post">
                     <label>Nome</label>
-                    <input type='text' name="name" placeholder='Digite seu nome' />
+                    <input 
+                        type='text' 
+                        name="nome" 
+                        value={nome} 
+                        onChange={(e) => setNome(e.target.value)} 
+                        placeholder='Digite seu nome' 
+                    />
 
                     <label>Telefone</label>
-                    <input type='tel' name="phone" placeholder='Digite seu número de telefone' />
+                    <input 
+                        type='tel' 
+                        name="telefone" 
+                        value={telefone} 
+                        onChange={(e) => setTelefone(e.target.value)} 
+                        placeholder='Digite seu número de telefone' 
+                    />
 
                     <label>Escreva sua Mensagem</label>
-                    <textarea name='message' rows={6} placeholder='Digite sua mensagem'></textarea>
+                    <textarea 
+                        name='mensagem' 
+                        rows={6} 
+                        value={mensagem} 
+                        onChange={(e) => setMensagem(e.target.value)} 
+                        placeholder='Digite sua mensagem' 
+                    ></textarea>
 
                     <button type='submit' className='btn dark-btn'>Enviar mensagem</button>
+                    {erro && <p className="error">{erro}</p>}
+                    {mensagemSucesso && <p className="success">{mensagemSucesso}</p>}
                 </form>
                 <span></span>
             </div>
