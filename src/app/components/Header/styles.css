@@ -1,6 +1,6 @@
 nav {
     width: 100%;
-    background: #ffffff;
+    background: #f7f6f6;
     color: #000000;
     padding: 4px 0;
     position: fixed;
@@ -13,7 +13,7 @@ nav {
 }
 
 .logo{
-    width: 180px;
+    width: 130px;
 }
 
 nav ul li{

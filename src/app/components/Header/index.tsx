@@ -5,7 +5,7 @@ import Link from 'next/link';
 const Header = () => {
     return (
           <nav className='container'>
-             <img src="logo.svg" alt="" className='logo'/>
+             <img src="logo2.png" alt="" className='logo'/>
                 <ul>
                     <li>Conservação</li>
                     <li>Sobre nós</li>
