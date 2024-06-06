@@ -25,7 +25,7 @@ const Login = () => {
                 setUsuariosCadastrados(data);
             } catch (error) {
                 console.error(error);
-                setError("Erro ao buscar usuários cadastrados.");
+                
             }
         }
 
